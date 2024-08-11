@@ -1,0 +1,144 @@
+/* App.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .heading {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .customer-list-container {
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    /* scrollbar-color: red; */
+    border-right: 1px solid #ccc;
+    padding: 10 px;
+    box-sizing: border-box;
+  }
+
+  
+  .customer-card {
+    padding: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0.1px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    height: 20%;
+  }
+  
+  .customer-card.selected {
+    background-color: #e0e0e0;
+  }
+  
+  .customer-card h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .customer-card p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+    display: -webkit-box; 
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    line-height: 1.2em;
+    text-align: justify;
+  }
+  
+  
+  .customer-details-container {
+    width: 70%;
+    padding-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .customer-details-container h2 {
+    margin-top: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .customer-details-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
+ 
+/*   
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .photo-cell {
+    background-color: black;
+    border-radius: 10px;
+    width: 170px;
+    height: 100px;
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  } */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .photo-cell {
+    background-color: red;
+    width: 170px; 
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .photo-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire cell */
+  }
+  
